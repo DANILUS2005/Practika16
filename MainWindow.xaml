@@ -1,0 +1,40 @@
+﻿<Window x:Class="Калькудлятор.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Калькудлятор"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="368.333" Width="577">
+    <Grid>
+        <Button x:Name="К1" Content="Вычислить" HorizontalAlignment="Left" Margin="31,237,0,0" VerticalAlignment="Top" Width="137" Height="53" Click="К1_Click" Background="#FF7A80FF"/>
+        <ComboBox x:Name="choice" HorizontalAlignment="Left" Height="38" Margin="197,62,0,0" VerticalAlignment="Top" Width="141" ContextMenuClosing="choice_ContextMenuClosing">
+            <ComboBox.Background>
+                <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                    <GradientStop Color="#FFF0F0F0" Offset="0"/>
+                    <GradientStop Color="#FF7A80FF" Offset="1"/>
+                </LinearGradientBrush>
+            </ComboBox.Background>
+            <TextBlock Text="сумма"/>
+            <TextBlock Text="разность"/>
+            <TextBlock Text="деление"/>
+            <TextBlock Text="умножение"/>
+            <TextBlock Text="синус"/>
+            <TextBlock Text="косинус"/>
+            <TextBlock Text="тангенс"/>
+            <TextBlock Text="котангенс"/>
+        </ComboBox>
+        <TextBox x:Name="P1" HorizontalAlignment="Left" Height="34" Margin="24,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="113" DataContextChanged="P1_DataContextChanged"/>
+        <TextBox x:Name="P2" HorizontalAlignment="Left" Height="38" Margin="401,62,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="121" DataContextChanged="P2_DataContextChanged"/>
+        <Label x:Name="Ответ" Content="" HorizontalAlignment="Left" Height="38" Margin="31,153,0,0" VerticalAlignment="Top" Width="153" RenderTransformOrigin="0.183,0.365" Background="#FF92A2EA"/>
+        <Label Content="Число А" HorizontalAlignment="Left" Margin="24,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Число В" HorizontalAlignment="Left" Margin="401,36,0,0" VerticalAlignment="Top"/>
+        <Label Content="Ответ" HorizontalAlignment="Left" Margin="31,127,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.354,0.593"/>
+        <Label x:Name="ПЧ1" Content="" HorizontalAlignment="Left" Margin="24,96,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="ПЧ2" Content="" HorizontalAlignment="Left" Margin="401,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="П3" HorizontalAlignment="Left" Height="60" Margin="284,153,0,0" TextWrapping="Wrap" Text="Для работы с фукциями нажмите на кнопку чтобы отключить второе поле ввода" VerticalAlignment="Top" Width="185" IsEnabled="False"/>
+        <Button x:Name="К2" Content="Вкл/Выкл второго поля ввода" HorizontalAlignment="Left" Margin="284,250,0,0" VerticalAlignment="Top" Width="185" Height="26" Click="К2_Click" Background="#FF7A80FF"/>
+        <Label Content="Калькулятор" HorizontalAlignment="Left" Margin="229,18,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
