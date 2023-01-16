@@ -1,0 +1,18 @@
+﻿<Window x:Class="Задание2.задание_4"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Задание2"
+        mc:Ignorable="d"
+        Title="задание_4" Height="256" Width="491">
+    <Grid Margin="0,0,-16,-16">
+        <TextBox x:Name="о" HorizontalAlignment="Center" Margin="0,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" Text="Начальное кол-во золота:" IsEnabled="False"/>
+        <Button x:Name="Buy" Content=" Купить кристалы" HorizontalAlignment="Center" VerticalAlignment="Top" Width="120" Margin="0,71,0,0" Click="Buy_Click"/>
+        <TextBox x:Name="gold" HorizontalAlignment="Center" Margin="0,28,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154"/>
+        <Label x:Name="crystalQuantity" Content="Кол-во кристалов: 0" HorizontalAlignment="Left" Margin="309,120,0,0" VerticalAlignment="Top"/>
+        <Label Content="Остаток золота: " HorizontalAlignment="Left" Margin="36,120,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="goldQuantity" HorizontalAlignment="Left" Margin="135,124,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="143"/>
+        <Button Content="Вернуться на главное окно" HorizontalAlignment="Left" Margin="320,193,0,0" VerticalAlignment="Top" Click="Button_Click"/>
+    </Grid>
+</Window>
